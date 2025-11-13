@@ -355,6 +355,20 @@ MIT License - See individual module READMEs for specific licensing information.
 
 ---
 
+## 👥 Team
+
+**Made with ❤️ by Team Neuro X**
+
+FocusMate was created by a dedicated team passionate about supporting neurodivergent individuals:
+
+1. **Aneesh Jayan Prabhu**
+2. **Samyogita Bhandari**
+3. **Sehastrajit Selvachandran**
+4. **Subramanian Raj Narayanan**
+5. **Vibha Swaminathan**
+
+---
+
 **Made with ❤️ to help neurodivergent young adults thrive in post-college life.**
 
 *FocusMate is designed to support, not replace, professional mental health care. If you're struggling with executive function challenges, consider working with a therapist or coach who specializes in neurodivergence.*
