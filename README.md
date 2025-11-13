@@ -4,7 +4,7 @@
 
 ## 💙 Our Mission
 
-FocusMate was created to support young adults navigating autism, dyslexia, ADHD, and mental health challenges as they transition into post-college life. We understand that executive function skills—like planning, organizing, prioritizing, and managing time—don't come naturally to everyone, and that's okay. FocusMate is here to bridge that gap.
+FocusMate was created to support young adults navigating autism, dyslexia, ADHD, and mental health challenges as they transition into post-college life. We understand that executive function skills, like planning, organizing, prioritizing, and managing time, don't come naturally to everyone, and that's okay. FocusMate is here to bridge that gap.
 
 ### The Challenge We're Addressing
 
@@ -15,7 +15,7 @@ For many neurodivergent individuals, everyday tasks that seem simple to others c
 - **Working memory**: Keeping track of multiple responsibilities and deadlines
 - **Emotional regulation**: Managing stress and anxiety while trying to stay organized
 
-FocusMate doesn't try to "fix" these challenges—instead, it works with your unique brain to make daily life more manageable and less stressful.
+FocusMate doesn't try to "fix" these challenges, instead, it works with your unique brain to make daily life more manageable and less stressful.
 
 ## 🌟 How FocusMate Helps
 
@@ -112,7 +112,7 @@ Executive function skills are the mental processes that help us:
 - Control impulses and emotions
 - Solve problems flexibly
 
-These skills are often challenging for neurodivergent individuals, but that doesn't mean they can't be supported. FocusMate acts as an external executive function system—a co-pilot that helps you navigate daily life with less stress and more success.
+These skills are often challenging for neurodivergent individuals, but that doesn't mean they can't be supported. FocusMate acts as an external executive function system, a co-pilot that helps you navigate daily life with less stress and more success.
 
 ## 🤝 How to Contribute
 
