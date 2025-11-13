@@ -101,7 +101,7 @@ Every feature in FocusMate is designed with neurodivergence in mind:
 - **Flexibility**: Multiple ways to interact (voice, text, visual)
 - **Forgiveness**: Easy to fix mistakes and adjust plans
 - **Transparency**: You always know what the AI is doing and why
-- **Respect**: Never tries to "fix" you—just makes life easier
+- **Respect**: Never tries to "fix" you, just makes life easier
 
 ## 📚 Understanding Executive Function
 
