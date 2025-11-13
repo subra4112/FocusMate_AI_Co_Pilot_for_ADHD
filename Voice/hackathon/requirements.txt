@@ -1,0 +1,13 @@
+numpy
+sounddevice
+soundfile
+python-dotenv
+elevenlabs
+fastapi
+uvicorn
+openai
+python-dateutil
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client

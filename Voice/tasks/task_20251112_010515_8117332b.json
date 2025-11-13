@@ -1,0 +1,17 @@
+{
+  "id": "20251112_010515_8117332b",
+  "created_at": "2025-11-12T01:05:15.583170",
+  "action": "prepare for the game",
+  "due": {
+    "date": "2023-10-07",
+    "time": "19:00",
+    "all_day": false
+  },
+  "priority": "medium",
+  "confidence": 0.9,
+  "rationale": "The user indicates a scheduled game, which suggests preparation is needed.",
+  "transcript": "I have a game to play this Saturday on 7:00 p.m..",
+  "completed": false,
+  "synced_to_calendar": true,
+  "synced_at": "2025-11-12T01:05:16.625565"
+}

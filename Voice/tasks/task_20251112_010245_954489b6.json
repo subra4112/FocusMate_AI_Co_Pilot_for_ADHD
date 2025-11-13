@@ -1,0 +1,17 @@
+{
+  "id": "20251112_010245_954489b6",
+  "created_at": "2025-11-12T01:02:45.423849",
+  "action": "play the game",
+  "due": {
+    "date": "2023-10-07",
+    "time": "19:00",
+    "all_day": false
+  },
+  "priority": "medium",
+  "confidence": 0.9,
+  "rationale": "The user is indicating a scheduled activity on Saturday at 7 p.m.",
+  "transcript": "I have a game to play Saturday on seven p.m..",
+  "completed": false,
+  "synced_to_calendar": true,
+  "synced_at": "2025-11-12T01:02:46.019419"
+}

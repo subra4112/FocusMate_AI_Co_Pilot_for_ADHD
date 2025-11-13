@@ -1,0 +1,17 @@
+{
+  "id": "20251112_190303_c5b8de71",
+  "created_at": "2025-11-12T19:03:03.521001",
+  "action": "submit the assignment",
+  "due": {
+    "date": "2025-11-13",
+    "time": "15:00",
+    "all_day": false
+  },
+  "priority": "high",
+  "confidence": 0.9,
+  "rationale": "The user expressed the assignment is super important and has a specific deadline.",
+  "transcript": "I have a super important assignment to submit tomorrow at 3:00 PM, and it's on sustainability.",
+  "completed": false,
+  "synced_to_calendar": true,
+  "synced_at": "2025-11-12T19:03:04.771531"
+}

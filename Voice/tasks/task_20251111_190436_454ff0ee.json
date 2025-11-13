@@ -1,0 +1,17 @@
+{
+  "id": "20251111_190436_454ff0ee",
+  "created_at": "2025-11-11T19:04:36.900562",
+  "action": "Attend team meeting",
+  "due": {
+    "date": "2025-11-12",
+    "time": "11:00",
+    "all_day": false
+  },
+  "priority": "medium",
+  "confidence": 0.9,
+  "rationale": "Extracted from multi-task analysis",
+  "transcript": "Team meeting tomorrow at eleven a.m..",
+  "completed": false,
+  "synced_to_calendar": true,
+  "synced_at": "2025-11-12T00:42:19.781550"
+}

@@ -1,0 +1,246 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.home-header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.brand h1 {
+  font-size: 36px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.tagline {
+  color: #8892b0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.voice-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 16px;
+  position: relative;
+}
+
+.voice-prompt {
+  text-align: center;
+}
+
+.voice-prompt h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.voice-prompt p {
+  color: #8892b0;
+  font-size: 14px;
+}
+
+.mic-button {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+.mic-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.5);
+}
+
+.mic-button:active {
+  transform: scale(0.95);
+}
+
+.mic-button.listening {
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 30px rgba(102, 126, 234, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
+  }
+}
+
+.listening-indicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #64ffda;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pulse {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #64ffda;
+  animation: pulse-dot 1s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+.quick-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.stat-card {
+  background: #1a1f3a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid #2a2f4a;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: #64ffda;
+  transform: translateY(-2px);
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #8892b0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2a2f4a;
+  color: white;
+  border: 1px solid #3a3f5a;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #3a3f5a;
+  border-color: #64ffda;
+  transform: translateY(-2px);
+}
+
+.recent-tasks {
+  background: #1a1f3a;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.recent-tasks h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.task-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #2a2f4a;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.task-preview:hover {
+  background: #3a3f5a;
+  transform: translateX(4px);
+}
+
+.priority-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.priority-dot.priority-high {
+  background: #dc3545;
+}
+
+.priority-dot.priority-medium {
+  background: #ffc107;
+}
+
+.priority-dot.priority-low {
+  background: #28a745;
+}
+
+.task-preview-text {
+  color: #ffffff;
+  font-size: 14px;
+  flex: 1;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #8892b0;
+  padding: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,271 @@
+{
+  "generated_at": "2025-11-12T01:11:09.478289-07:00",
+  "last_updated": "2025-11-12T01:11:09.478289-07:00",
+  "timezone": "America/Denver",
+  "focus_routine_info": {
+    "included": true,
+    "reason": "2 focus routine(s): Long break (6.5 hours gap between tasks); Long break (5.5 hours gap between tasks)",
+    "max_duration_minutes": 5,
+    "count": 2
+  },
+  "sections": [
+    {
+      "section_type": "focus_routine",
+      "title": "Focus Routine #1: Before Trial",
+      "max_duration": "5 minutes",
+      "for_task": "Trial",
+      "task_start_time": "11:00 AM",
+      "reason": "Long break (6.5 hours gap between tasks)",
+      "items": [
+        {
+          "type": "routine",
+          "time": "10:50 AM",
+          "duration_minutes": 1,
+          "activity": "Mental Reset",
+          "description": "Close your eyes and take deep breaths for 60 seconds. Let go of other thoughts.",
+          "purpose": "To clear your mind and prepare for the upcoming task"
+        },
+        {
+          "type": "routine",
+          "time": "10:51 AM",
+          "duration_minutes": 2,
+          "activity": "Physical Refresh",
+          "description": "Stand up, stretch your legs and arms, adjust your sitting posture.",
+          "purpose": "To wake your body up and improve blood circulation"
+        },
+        {
+          "type": "routine",
+          "time": "10:53 AM",
+          "duration_minutes": 2,
+          "activity": "Get Ready",
+          "description": "Open relevant documents, set a calm playlist, refill your water bottle.",
+          "purpose": "To prepare your workspace and get into the task mindset"
+        }
+      ]
+    },
+    {
+      "section_type": "focus_routine",
+      "title": "Focus Routine #2: Before [MEDIUM] Complete assignment",
+      "max_duration": "5 minutes",
+      "for_task": "[MEDIUM] Complete assignment",
+      "task_start_time": "09:00 PM",
+      "reason": "Long break (5.5 hours gap between tasks)",
+      "items": [
+        {
+          "type": "routine",
+          "time": "08:51 PM",
+          "duration_minutes": 1,
+          "activity": "Mental Reset",
+          "description": "Take deep breaths, clear your mind from distractions.",
+          "purpose": "To mentally prepare for the next task."
+        },
+        {
+          "type": "routine",
+          "time": "08:52 PM",
+          "duration_minutes": 2,
+          "activity": "Physical Refresh",
+          "description": "Stand up, stretch your body, rotate your neck.",
+          "purpose": "To eliminate physical stiffness and improve concentration."
+        },
+        {
+          "type": "routine",
+          "time": "08:54 PM",
+          "duration_minutes": 2,
+          "activity": "Get Ready",
+          "description": "Open relevant documents, set soft background music.",
+          "purpose": "To ensure a smooth start of the task."
+        }
+      ]
+    },
+    {
+      "section_type": "work_schedule",
+      "title": "Work Schedule with Breaks",
+      "items": [
+        {
+          "type": "task_block",
+          "event_id": "2q1pctq6mfhhj85au34327jltl",
+          "original_task": "Test 2 part 2",
+          "start": "12:00 AM",
+          "end": "12:15 AM",
+          "is_past": true,
+          "segments": [
+            {
+              "type": "work",
+              "start": "12:00 AM",
+              "end": "12:15 AM",
+              "activity": "Test 2 part 2"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "6mb4qkbdfvsmno3dq67qgbvdfe",
+          "original_task": "test 2 part 3",
+          "start": "12:20 AM",
+          "end": "12:50 AM",
+          "is_past": true,
+          "segments": [
+            {
+              "type": "work",
+              "start": "12:20 AM",
+              "end": "12:50 AM",
+              "activity": "test 2 part 3"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "7g3jdlcru5q4f9spvsb6c5g5gk",
+          "original_task": "[MEDIUM] Attend team meeting",
+          "start": "04:00 AM",
+          "end": "04:30 AM",
+          "is_past": false,
+          "segments": [
+            {
+              "type": "work",
+              "start": "04:00 AM",
+              "end": "04:30 AM",
+              "activity": "[MEDIUM] Attend team meeting"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "20ttn5r795v0i33cd9cbdu122j",
+          "original_task": "Trial",
+          "start": "11:00 AM",
+          "end": "12:00 PM",
+          "is_past": false,
+          "segments": [
+            {
+              "type": "work",
+              "start": "11:00 AM",
+              "end": "11:50 AM",
+              "activity": "Trial"
+            },
+            {
+              "type": "break",
+              "start": "11:50 AM",
+              "end": "12:00 PM",
+              "duration_minutes": 10,
+              "activity": "Short break",
+              "reason": "Worked for 50 minutes"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "j5l5djqoii1t4kmuj8ojgpg8us",
+          "original_task": "[MEDIUM] Attend team meeting",
+          "start": "11:00 AM",
+          "end": "11:30 AM",
+          "is_past": false,
+          "segments": [
+            {
+              "type": "work",
+              "start": "11:00 AM",
+              "end": "11:30 AM",
+              "activity": "[MEDIUM] Attend team meeting"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "n8luuke4k6rl4ciasoutrbgs3o",
+          "original_task": "[HIGH] Take exam",
+          "start": "02:00 PM",
+          "end": "02:30 PM",
+          "is_past": false,
+          "segments": [
+            {
+              "type": "work",
+              "start": "02:00 PM",
+              "end": "02:30 PM",
+              "activity": "[HIGH] Take exam"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "67hej6s4tvlrpjp8rji4rmrivk",
+          "original_task": "[HIGH] Take exam",
+          "start": "03:00 PM",
+          "end": "03:30 PM",
+          "is_past": false,
+          "segments": [
+            {
+              "type": "work",
+              "start": "03:00 PM",
+              "end": "03:30 PM",
+              "activity": "[HIGH] Take exam"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "971o6p8imcn9hspm78epntab54",
+          "original_task": "[MEDIUM] Complete assignment",
+          "start": "09:00 PM",
+          "end": "09:30 PM",
+          "is_past": false,
+          "segments": [
+            {
+              "type": "work",
+              "start": "09:00 PM",
+              "end": "09:30 PM",
+              "activity": "[MEDIUM] Complete assignment"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "poilr9coh07gulk3ioqi41mgs0",
+          "original_task": "[MEDIUM] Play game",
+          "start": "10:00 PM",
+          "end": "10:30 PM",
+          "is_past": false,
+          "segments": [
+            {
+              "type": "work",
+              "start": "10:00 PM",
+              "end": "10:30 PM",
+              "activity": "[MEDIUM] Play game"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "ve7k75u46nupunv8vq2evb1134",
+          "original_task": "[MEDIUM] Play game",
+          "start": "10:00 PM",
+          "end": "10:30 PM",
+          "is_past": false,
+          "segments": [
+            {
+              "type": "work",
+              "start": "10:00 PM",
+              "end": "10:30 PM",
+              "activity": "[MEDIUM] Play game"
+            }
+          ]
+        },
+        {
+          "type": "task_block",
+          "event_id": "tdo7h2o6gf8m3q82o9k6enenn4",
+          "original_task": "[HIGH] Have exam",
+          "start": "11:00 PM",
+          "end": "11:30 PM",
+          "is_past": false,
+          "segments": [
+            {
+              "type": "work",
+              "start": "11:00 PM",
+              "end": "11:30 PM",
+              "activity": "[HIGH] Have exam"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

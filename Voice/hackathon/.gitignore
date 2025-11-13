@@ -1,0 +1,30 @@
+# Environment variables
+.env
+
+# Google Calendar credentials
+credentials.json
+token.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tasks (optional - uncomment if you want to keep tasks private)
+# tasks/*.json
+

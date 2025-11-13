@@ -1,0 +1,17 @@
+{
+  "id": "20251112_012557_4c8a0093",
+  "created_at": "2025-11-12T01:25:57.590750",
+  "action": "prepare for the exam",
+  "due": {
+    "date": "2023-10-14",
+    "time": "19:00",
+    "all_day": false
+  },
+  "priority": "high",
+  "confidence": 0.9,
+  "rationale": "The mention of an exam implies a need for preparation before the stated time.",
+  "transcript": "(chair sliding on floor) I have an exam on Saturday at 7:00 PM.",
+  "completed": false,
+  "synced_to_calendar": true,
+  "synced_at": "2025-11-12T01:25:58.437219"
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusMate Inbox Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #101218;
+      color: #f5f7fb;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    aside {
+      width: 260px;
+      background: #181c25;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 24px 18px;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 24px 0;
+    }
+
+    .category-button {
+      width: 100%;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      color: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .category-button.active {
+      background: linear-gradient(135deg, #5b8cff, #8d63ff);
+    }
+
+    .category-button:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    main {
+      flex: 1;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .email-list {
+      background: #181c25;
+      border-radius: 14px;
+      padding: 16px;
+      max-height: calc(100vh - 48px);
+      overflow-y: auto;
+      box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.6);
+    }
+
+    .email-card {
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      transition: transform 0.12s ease, background 0.12s ease;
+    }
+
+    .email-card:hover {
+      transform: translateX(4px);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .email-card h3 {
+      margin: 0 0 6px 0;
+      font-size: 1rem;
+    }
+
+    .email-card p {
+      margin: 0;
+      color: rgba(245, 247, 251, 0.74);
+      font-size: 0.85rem;
+      line-height: 1.36rem;
+    }
+
+    .email-card button {
+      height: 36px;
+      width: 36px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      color: inherit;
+      font-size: 1.2rem;
+      cursor: pointer;
+      align-self: center;
+      transition: background 0.2s ease;
+    }
+
+    .email-card button:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .report-panel {
+      background: #181c25;
+      border-radius: 14px;
+      padding: 20px 24px;
+      min-height: 420px;
+      box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.6);
+    }
+
+    .report-panel h2 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.2rem;
+    }
+
+    .report-chip {
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: rgba(91, 140, 255, 0.2);
+    }
+
+    .report-section {
+      margin-top: 18px;
+    }
+
+    .report-section h3 {
+      margin: 0 0 8px 0;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .report-section p,
+    .report-section ul {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.92rem;
+      line-height: 1.5rem;
+    }
+
+    .report-section ul {
+      padding-left: 20px;
+    }
+
+    .theme-preview {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .theme-preview img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .flowchart-box {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 14px 16px;
+      line-height: 1.45rem;
+      font-size: 0.92rem;
+      white-space: pre-line;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <h1>FocusMate Inbox</h1>
+    <button class="category-button active" data-category="tasks">Tasks (10)</button>
+    <button class="category-button" data-category="articles">Articles (10)</button>
+    <button class="category-button" data-category="instructions">Instructions (10)</button>
+  </aside>
+
+  <main>
+    <section class="email-list" id="emailList"></section>
+    <section class="report-panel" id="reportPanel">
+      <h2>Pick an email to see the report</h2>
+      <p style="color: rgba(255, 255, 255, 0.6);">Select a card from the left to preview the calendar linking, article summary, or instruction flowchart.</p>
+    </section>
+  </main>
+
+  <script>
+    const demoData = {
+      tasks: Array.from({ length: 10 }, (_, idx) => ({
+        id: `task-${idx + 1}`,
+        subject: `Project Milestone ${idx + 1}`,
+        snippet: `Finalize deliverables and confirm due date of ${new Date(Date.now() + (idx + 1) * 86400000).toLocaleDateString()}.`,
+        summary: "Reviewed milestones and locked scope with stakeholders.",
+        dueDate: new Date(Date.now() + (idx + 2) * 86400000).toISOString(),
+        calendarNote: "Added to calendar with prep reminder 24h ahead.",
+      })),
+      articles: [
+        {
+          id: "article-1",
+          subject: "Mindful Morning Routines",
+          snippet: "New research on how slow mornings boost focus.",
+          summary: "Article covers mindful breathing, light movement, and preparing daily priorities before inbox time.",
+          theme: "health",
+        },
+        {
+          id: "article-2",
+          subject: "Weekly Market Digest",
+          snippet: "Macro trends, inflation signals, and productivity takeaways.",
+          summary: "Summarizes three actionable financial trends and how to plan for them across your projects.",
+          theme: "finance",
+        },
+      ].concat(Array.from({ length: 8 }, (_, idx) => ({
+        id: `article-${idx + 3}`,
+        subject: `Deep dive topic ${idx + 3}`,
+        snippet: "Highlights from the latest knowledge brief.",
+        summary: "Article distills the major insights and next actions to consider this week.",
+        theme: idx % 2 ? "technology" : "food",
+      }))),
+      instructions: Array.from({ length: 10 }, (_, idx) => ({
+        id: `instruction-${idx + 1}`,
+        subject: `How to deploy release ${idx + 1}`,
+        snippet: "Follow the rollout checklist before Friday.",
+        summary: "Walkthrough for staging review, QA signoff, and release communication.",
+        steps: [
+          "Check automated tests",
+          "Run staging smoke suite",
+          "Tag release notes",
+          "Notify deployment channel",
+        ].map((step, stepIdx) => `${step} (${stepIdx + 1})`),
+      })),
+    };
+
+    const THEME_IMAGES = {
+      food: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+      finance: "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+      technology: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      health: "https://images.unsplash.com/photo-1514996937319-344454492b37",
+      productivity: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a",
+    };
+    const DEFAULT_IMAGE = "https://images.unsplash.com/photo-1498050108023-c5249f4df085";
+
+    const emailListEl = document.getElementById("emailList");
+    const reportPanelEl = document.getElementById("reportPanel");
+
+    let currentCategory = "tasks";
+
+    function renderEmailList(category) {
+      currentCategory = category;
+      emailListEl.innerHTML = "";
+
+      const items = demoData[category];
+      items.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "email-card";
+        card.innerHTML = `
+          <div>
+            <h3>${item.subject}</h3>
+            <p>${item.snippet}</p>
+          </div>
+          <button aria-label="See report" data-id="${item.id}">></button>
+        `;
+
+        card.querySelector("button").addEventListener("click", () => showReport(category, item));
+        emailListEl.appendChild(card);
+      });
+    }
+
+    function showReport(category, item) {
+      if (category === "tasks") {
+        reportPanelEl.innerHTML = `
+          <h2>${item.subject} <span class="report-chip">Task</span></h2>
+          <div class="report-section">
+            <h3>Summary</h3>
+            <p>${item.summary}</p>
+          </div>
+          <div class="report-section">
+            <h3>Calendar</h3>
+            <p>Due on <strong>${new Date(item.dueDate).toLocaleString()}</strong></p>
+            <p>${item.calendarNote}</p>
+            <button style="margin-top: 12px; padding: 10px 16px; border-radius: 10px; border: none; background: linear-gradient(135deg, #5b8cff, #8d63ff); color: white; font-weight: 600; cursor: pointer;">Open Calendar Link</button>
+          </div>
+        `;
+      } else if (category === "articles") {
+        const imageUrl = THEME_IMAGES[item.theme] || DEFAULT_IMAGE;
+        reportPanelEl.innerHTML = `
+          <h2>${item.subject} <span class="report-chip">Article</span></h2>
+          <div class="report-section">
+            <h3>Summary</h3>
+            <p>${item.summary}</p>
+          </div>
+          <div class="report-section">
+            <h3>Theme Image</h3>
+            <div class="theme-preview">
+              <img src="${imageUrl}" alt="Theme visual" />
+            </div>
+          </div>
+        `;
+      } else {
+        const content = (item.steps && item.steps.length)
+          ? item.steps.map((step, idx) => `Step ${idx + 1}: ${step}`).join("\n -> ")
+          : item.summary;
+        reportPanelEl.innerHTML = `
+          <h2>${item.subject} <span class="report-chip">Instruction</span></h2>
+          <div class="report-section">
+            <h3>Flowchart</h3>
+            <div class="flowchart-box">${content}</div>
+          </div>
+        `;
+      }
+    }
+
+    document.querySelectorAll(".category-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".category-button").forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+        renderEmailList(button.dataset.category);
+        reportPanelEl.innerHTML = `
+          <h2>Pick an email to see the report</h2>
+          <p style="color: rgba(255, 255, 255, 0.6);">Select a card from the left to preview the calendar linking, article summary, or instruction flowchart.</p>
+        `;
+      });
+    });
+
+    renderEmailList("tasks");
+  </script>
+</body>
+</html>

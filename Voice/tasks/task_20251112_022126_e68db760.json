@@ -1,0 +1,17 @@
+{
+  "id": "20251112_022126_e68db760",
+  "created_at": "2025-11-12T02:21:26.519534",
+  "action": "Play game",
+  "due": {
+    "date": "2025-11-12",
+    "time": "10:00",
+    "all_day": false
+  },
+  "priority": "medium",
+  "confidence": 0.9,
+  "rationale": "Extracted from multi-task analysis",
+  "transcript": "I have a game to play today at 10:00 AM.",
+  "completed": false,
+  "synced_to_calendar": true,
+  "synced_at": "2025-11-12T02:21:26.791587"
+}

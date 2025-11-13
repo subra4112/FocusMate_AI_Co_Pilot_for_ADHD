@@ -1,0 +1,13 @@
+beautifulsoup4>=4.12
+fastapi>=0.110
+langchain>=0.2
+langchain-openai>=0.1
+pydantic>=2,<3
+python-dateutil>=2.8
+python-dotenv>=1.0
+streamlit>=1.51
+uvicorn[standard]>=0.30
+google-api-python-client>=2.149
+google-auth-httplib2>=0.2
+google-auth-oauthlib>=1.2
+supermemory

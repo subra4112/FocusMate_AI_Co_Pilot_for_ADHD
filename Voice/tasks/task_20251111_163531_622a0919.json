@@ -1,0 +1,17 @@
+{
+  "id": "20251111_163531_622a0919",
+  "created_at": "2025-11-11T16:35:31.267451",
+  "action": "Take exam",
+  "due": {
+    "date": "2025-11-12",
+    "time": "14:00",
+    "all_day": false
+  },
+  "priority": "high",
+  "confidence": 0.9,
+  "rationale": "Extracted from multi-task analysis",
+  "transcript": "Ah, I have an exam tomorrow at 02:00 p.m.",
+  "completed": false,
+  "synced_to_calendar": true,
+  "synced_at": "2025-11-12T00:42:18.798445"
+}

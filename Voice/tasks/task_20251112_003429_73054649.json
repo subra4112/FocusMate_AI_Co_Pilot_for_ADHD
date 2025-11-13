@@ -1,0 +1,17 @@
+{
+  "id": "20251112_003429_73054649",
+  "created_at": "2025-11-12T00:34:29.454503",
+  "action": "Complete assignment",
+  "due": {
+    "date": "2025-11-13",
+    "time": "12:00",
+    "all_day": false
+  },
+  "priority": "medium",
+  "confidence": 0.9,
+  "rationale": "Extracted from multi-task analysis",
+  "transcript": "I have an assignment tomorrow at twelve p.m.",
+  "completed": false,
+  "synced_to_calendar": true,
+  "synced_at": "2025-11-12T00:42:20.311751"
+}

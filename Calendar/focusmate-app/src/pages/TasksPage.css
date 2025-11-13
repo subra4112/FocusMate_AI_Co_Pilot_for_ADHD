@@ -1,0 +1,43 @@
+.tasks-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tasks-summary {
+  font-size: 14px;
+  color: #8892b0;
+  margin-top: 4px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  background: #1a1f3a;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.filter-tab {
+  flex: 1;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  color: #8892b0;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-tab:hover {
+  background: #2a2f4a;
+  color: #ffffff;
+}
+
+.filter-tab.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}

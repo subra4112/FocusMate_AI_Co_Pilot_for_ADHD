@@ -1,0 +1,54 @@
+# Large video files
+*.mp4
+*.avi
+*.mov
+
+# Large zip files
+*.zip
+
+# Video project files
+Pitch video/
+*.prproj
+*.prin
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Credentials and Secrets (IMPORTANT FOR PUBLIC REPO)
+credentials.json
+token.json
+token.pickle
+*.pem
+*.key
+.env
+.env.local
+.env.*.local
+config.py
+# Keep template files
+!credentials.json.template
+!.env.example
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
